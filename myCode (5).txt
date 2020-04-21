@@ -1,0 +1,22 @@
+var img = new SimpleImage(200,200);
+print(img);
+
+for (var pixel of img.values()) {
+    
+     var redV = pixel.getRed();
+     var greenV = pixel.getGreen();
+     var blueV =pixel.getBlue();
+     
+     redV = 255; 
+     greenV = 255;
+     blueV= 0;
+     
+     pixel.setRed(redV);
+     pixel.setGreen(greenV);
+     pixel.setBlue(blueV);
+     
+}
+print (img);
+
+
+
