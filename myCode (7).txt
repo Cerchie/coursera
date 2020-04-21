@@ -1,0 +1,23 @@
+var img = new SimpleImage("usain.jpg");
+print (img);
+
+img.getWidth();
+print(img.getWidth());
+
+for (var pixel of img.values()) {
+var Xpix = pixel.getX();
+if (Xpix <= 100) {
+    pixel.setRed(255);
+}
+
+if (Xpix > 100 && Xpix <= 199); {
+    pixel.setGreen(255);
+}
+if (Xpix >199) {
+    pixel.setBlue(255);
+}
+// modify pixel
+
+}
+
+print(img);
