@@ -1,0 +1,20 @@
+var img = new SimpleImage("usain.jpg");
+print (img);
+
+function swapRedGreen(pixel) {
+    
+     var newR = pixel.getRed();
+     var newG = pixel.getGreen();
+    
+    pixel.setRed(newG);
+    pixel.setGreen(newR);
+    
+    return newR;
+    return newG;
+ }
+ 
+ for (var pixel of img.values()) 
+ {
+     swapRedGreen(pixel); 
+ }
+print (img);
