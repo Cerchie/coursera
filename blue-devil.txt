@@ -1,0 +1,14 @@
+var logo = new SimpleImage ("duke_blue_devil.png");
+print (logo);
+
+for (var pixel of logo.values()) {
+    
+ if (pixel.getRed() === 0) {
+     
+     pixel.setRed(255);
+     pixel.setGreen(255);
+     pixel.setBlue(0);
+ }
+ 
+}
+print(logo);
