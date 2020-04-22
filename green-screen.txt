@@ -1,0 +1,21 @@
+var fImage = new SimpleImage("drewRobert.png"); 
+var bImage = new SimpleImage("dinos.png"); 
+
+
+print (fImage)
+print (bImage)
+
+
+for (var pix of fImage.values()) {
+     var x = pix.getX();
+     var y = pix.getY();
+     var bPix = bImage.getPixel(x,y);
+if (pix.getGreen() < 240) {
+    fImage.setPixel(x,y, pix)
+}
+
+else {
+    fImage.setPixel(x,y, bPix);
+}
+}
+print (fImage)
