@@ -1,0 +1,13 @@
+var img = new SimpleImage ("chapel.png");
+print(img)
+for (var pixel of img.values()){
+    var x = pixel.getX();
+    var y = pixel.getY();
+var a = img.getRed(x,y);
+var b = img.getGreen(x,y);
+var c = img.getBlue(x,y);
+var avg = (a + b + c)/3
+img.setRed(x,y, avg);
+img.setGreen(x,y, avg);
+img.setBlue(x,y, avg);}
+print(img)
